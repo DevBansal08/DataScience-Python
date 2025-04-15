@@ -3,7 +3,7 @@ import pandas as pd
 df= pd.read_csv("D:\Data science file\weather_data.csv" )
 # print(type(df.day))
 
-df.set_index('day', inplace=True)
+# df.set_index('day', inplace=True)
 # METHOD1
 # df.fillna(0,inplace = True)
 
@@ -15,7 +15,7 @@ df.set_index('day', inplace=True)
 # }, inplace = True)
 
 # METHOD3
-# df.fillna(method = "ffill", inplace = True)
+df.fillna(method = "ffill", inplace = True)p
 
 # METHOD4
 # df=df.interpolate()

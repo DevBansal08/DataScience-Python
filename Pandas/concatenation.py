@@ -12,5 +12,5 @@ us_weather = pd.DataFrame({
     "humidity":[68,65,75]
 
 } )
-df = pd.concat([india_weather,us_weather], keys =["india","us"])
+df = pd.concat([india_weather,us_weather], ignore_index= True)
 print(df)
